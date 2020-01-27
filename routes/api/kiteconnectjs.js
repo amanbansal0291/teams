@@ -41,7 +41,9 @@ router.get('/login', function (req, res) {
    console.log("aman bansal");
    var api_key="";
    var url= "https://kite.trade/connect/login?v=3&api_key="+api_key;
-   opn(url);
+   console.log("open url");
+   require("openurl").open(url);
+   
 });
 
 router.get('/return', function (req, res) {
